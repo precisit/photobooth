@@ -1,98 +1,63 @@
 body{
-	background-color:lightblue; */
+    /*background-color:lightblue; */
+    background-color:#6534ff;
+    font-family: 'Roboto', sans-serif;
 }
 
 h1{
-	color:white;
+	/*color:white;
 	font-size:80px;
 	text-align:center;
-    font-family: 'Gloria Hallelujah', cursive;
+    font-family: 'Gloria Hallelujah', cursive; */
+    color:#fccdd3;
+	font-size:80px;
+	text-align:center;
 }
 #camera-stream{
-    width:480px;
-    height:320px;
+    height:100%;
+    width:40%;
+    margin-right:auto;
+    margin-left:auto;
+    vertical-align: middle;
+    object-fit: fill;
 }
 
 #snap{
-    width:480px;
-    height:320px;
+    margin-right:auto;
+    margin-left:auto;
+    height:100%;
+    width:40%;
+    vertical-align: middle;
 }
 
 #canvas{
-    width:480px;
-    height:320px;
+    display:none;
 }
 
 .all-container{
-    background-color:darkblue;
+    /*background-color:darkblue;
     margin:10%;
+    text-align:center;*/
+    height: 50vh;
     text-align:center;
 }
 
-.video-container{
-    display:inline-block;
-    width: 480px;
-    height: 320px;
-    text-align:center;
+.buttons {
+    font-size:15vh !important;
+    margin:5vh;
+    color:#bbc4ef;
+    cursor: pointer;
+    transition: all .1s ease-in-out;
 }
 
-.snap-container{
-    display:inline-block;
-    width: 480px;
-    height: 320px;
-    text-align:center;
-}
-
-.canvas-container{
-    display:inline-block;
-    width: 480px;
-    height: 320px;
-    text-align:center;
-}
-
-.button-container{
-    background-color:white;
-}
-
-#camera-stream:hover {
-    background-color: #777;
+.buttons:hover {
+    color:#62bcfa;
+    transform: scale(1.2); 
 }
 
 
-.canvas{
-	display:none; 
-}
-
-.video{
-    display:inline-block;
-    text-align:center;
-}
-
-.head-menu{
-    background-color: #333;
-    overflow: auto;
-    white-space: nowrap;
-}
-
-.head-menu-item{
- 	display: inline-block;
-    color: white;
+.button-container {
+    height:10vh !important;
     text-align: center;
-    padding: 14px;
-    text-decoration: none;
-}
-
-.head-menu-item:hover {
-    background-color: #777;
-}
-
-
-footer{
-    margin:10%;
-    color:white;
-    text-align:center;
-}
-
-p{
-    font-size: 18px;
+    width: 100%; 
 }
