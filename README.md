@@ -10,10 +10,10 @@ Download this project to your own computer by for example using git clone and th
 
 ### Prerequisites
 
-#### Install the node package manager. This command installs a package, and any packages that it depends on
+#### Install the node package manager
 install npm
 
-####  Install the Express.js framework for Node.js
+####  Install the Express.js framework
 npm install express --save
 
 #### Install Embedded JavaScript templates (EJS)
