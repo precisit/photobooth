@@ -1,5 +1,7 @@
 # Photobooth
 
+This project is used to demonstrate how to create a photobooth with which you can take photos in your web browser using WebRTC.
+
 A camera application to take awesome pictures and save them to your computer.
 
 ## Presentation
