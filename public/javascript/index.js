@@ -13,9 +13,9 @@ var promise= navigator.mediaDevices.getUserMedia({ video: true })
 	});
 
 // Fetch the buttons
-const take_photo_btn=document.querySelector('#take-photo')
-const save_photo_btn=document.querySelector('#save-photo')
-const delete_photo_btn=document.querySelector('#delete-photo')
+const take_photo_btn=document.getElementById('take-photo')
+const save_photo_btn=document.getElementById('save-photo')
+const delete_photo_btn=document.getElementById('delete-photo')
 
 // Eventlistener for take photo button
 take_photo_btn.addEventListener('click', (e) =>{
