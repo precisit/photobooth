@@ -3,18 +3,14 @@ const hidden_canvas = document.getElementById('canvas'); // Get canvas
 const video= document.getElementById('camera-stream')// Get video stream
 
 // Fetch video stream
-navigator.getMedia = (navigator.getUserMedia ||
-          navigator.webkitGetUserMedia ||
-          navigator.mozGetUserMedia ||
-          navigator.msGetUserMedia);
-navigator.getMedia( { video: true }, (stream) => {
-  video.src = window.URL.createObjectURL(stream);
-  video.play();
-  },
-  (err) => {
-    console.error(err);
-  }
-);
+var promise= navigator.mediaDevices.getUserMedia({ video: true })
+	.then(function(stream){
+		video.src = window.URL.createObjectURL(stream);
+		video.play();
+	})
+	.catch(function(err){
+		console.error(err);
+	});
 
 // Fetch the buttons
 const take_photo_btn=document.querySelector('#take-photo')
