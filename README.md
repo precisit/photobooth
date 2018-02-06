@@ -1,4 +1,4 @@
-# photobooth
+# Photobooth
 
 A camera application to take awesome pictures and save them to your computer.
 
