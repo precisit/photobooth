@@ -1,6 +1,7 @@
 body{
     /*background-color:lightblue; */
-    background-color:#6534ff;
+    /* background-color:#6534ff; */
+    background-image: url("/images/sky_stars.png");
     font-family: 'Roboto', sans-serif;
 }
 
