@@ -1,6 +1,4 @@
 body{
-    /*background-color:lightblue; */
-    /* background-color:#6534ff; */
     background-image: url("/images/sky_stars.png");
     font-family: 'Roboto', sans-serif;
     background-repeat: no-repeat;
@@ -26,10 +24,6 @@ body{
 }
 
 h1{
-	/*font-size:80px;
-	text-align:center;
-    font-family: 'Gloria Hallelujah', cursive; */
-    /*color:#fccdd3; */
     color:white;
 	font-size:80px;
     text-align:center;
@@ -60,9 +54,6 @@ h1{
 }
 
 .all-container{
-    /*background-color:darkblue;
-    margin:10%;
-    text-align:center;*/
     height: 50vh;
     text-align:center;
 }
@@ -70,7 +61,6 @@ h1{
 .buttons {
     font-size:15vh !important;
     margin:5vh;
-    /*color:#bbc4ef; */
     color:white;
     cursor: pointer;
     transition: all .1s ease-in-out;
@@ -81,7 +71,6 @@ h1{
     color:#62bcfa;
     transform: scale(1.2); 
 }
-
 
 .button-container {
     height:10vh !important;

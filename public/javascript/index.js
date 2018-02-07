@@ -15,7 +15,7 @@ var promise= navigator.mediaDevices.getUserMedia({ video: true })
 // Fetch the buttons
 const take_photo_btn=document.getElementById('take-photo')
 const delete_photo_btn=document.getElementById('delete-photo')
-//const save_photo_btn=document.getElementById('save-photo')
+const save_photo_btn=document.getElementById('save-photo')
 
 // Eventlistener for take photo button
 take_photo_btn.addEventListener('click', (e) =>{
@@ -32,17 +32,17 @@ take_photo_btn.addEventListener('click', (e) =>{
 	}, 200);
 
 	// Save photo
-	/*const save_tag= document.getElementById('save-photo')
+	const save_tag= document.getElementById('save-photo')
 	console.log('Get save button: '+save_tag)
 	save_tag.setAttribute("href", snap) // set attribute href
 	console.log('Set attribute href for save photo: ' +save_tag.setAttribute("href", snap) )
-	e.preventDefault(); */
+	e.preventDefault(); 
 })
 
 // Eventlistener for save button
-/*save_photo_btn.addEventListener('click', (e) =>{
+save_photo_btn.addEventListener('click', (e) =>{
 	console.log("save photo")
- }) */
+ }) 
 
 // Eventlistener for delete button
 delete_photo_btn.addEventListener('click', (e) =>{
@@ -51,10 +51,10 @@ delete_photo_btn.addEventListener('click', (e) =>{
 	document.getElementById("snap").style.display = "none";
 
 	// Save photo
-	/*const save_tag2= document.getElementById('save-photo')
+	const save_tag2= document.getElementById('save-photo')
 	save_tag2.setAttribute("href", '') // set attribute href
 	console.log("Delete photo")
-	e.preventDefault(); */
+	e.preventDefault(); 
 }) 
 
 
