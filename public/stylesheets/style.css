@@ -28,6 +28,7 @@ h1{
     height:100%;
     width:40%;
     vertical-align: middle;
+    display:none;
 }
 
 #canvas{
@@ -48,6 +49,7 @@ h1{
     color:#bbc4ef;
     cursor: pointer;
     transition: all .1s ease-in-out;
+    user-select: none;
 }
 
 .buttons:hover {

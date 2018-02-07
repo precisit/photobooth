@@ -21,6 +21,7 @@ const delete_photo_btn=document.getElementById('delete-photo')
 take_photo_btn.addEventListener('click', (e) =>{
 	console.log("Clicked on take-photo")
 	const snap= takeSnapShot() //anropa snapchot funktionen, den returnerar en bild
+	document.getElementById("snap").style.display = "inline";
 	const image_tag= document.getElementById('snap') // get image tag
 	image_tag.setAttribute("src", snap) // set attribute src
 
@@ -41,6 +42,7 @@ take_photo_btn.addEventListener('click', (e) =>{
 delete_photo_btn.addEventListener('click', (e) =>{
 	const image_tag2= document.getElementById('snap') // get image tag
 	image_tag2.setAttribute("src",'') // set attribute src
+	document.getElementById("snap").style.display = "none";
 
 	// Save photo
 	/*const save_tag2= document.getElementById('save-photo')
