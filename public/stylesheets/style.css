@@ -3,18 +3,30 @@ body{
     /* background-color:#6534ff; */
     background-image: url("/images/sky_stars.png");
     font-family: 'Roboto', sans-serif;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+#logo{
+    position:absolute;
+    right:10vw;
+    top:2vw;
+    
 }
 
 h1{
-	/*color:white;
-	font-size:80px;
+	/*font-size:80px;
 	text-align:center;
     font-family: 'Gloria Hallelujah', cursive; */
     /*color:#fccdd3; */
     color:white;
 	font-size:80px;
-	text-align:center;
+    text-align:center;
 }
+
+
+
 #camera-stream{
     height:100%;
     width:40%;
@@ -22,6 +34,7 @@ h1{
     margin-left:auto;
     vertical-align: middle;
     object-fit: fill;
+    box-shadow: 1px 1px 15px #2A2A2A;
 }
 
 #snap{
@@ -31,6 +44,7 @@ h1{
     width:40%;
     vertical-align: middle;
     display:none;
+    box-shadow: 1px 1px 15px #2A2A2A;
 }
 
 #canvas{
