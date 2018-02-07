@@ -6,17 +6,6 @@ body{
     background-position: center;
 }
 
-#flash{
-    background-color:white;
-    width:100%;
-    height:100%;
-    position: absolute;
-    top:0;
-    left:0;
-    display: none;
-    opacity: 0.9;
-}
-
 #logo{
     position:absolute;
     right:10vw;
@@ -51,6 +40,17 @@ h1{
 
 #canvas{
     display:none;
+}
+
+#flash{
+    background-color:white;
+    width:100%;
+    height:100%;
+    position: absolute;
+    top:0;
+    left:0;
+    display: none;
+    opacity: 0.9;
 }
 
 .all-container{
