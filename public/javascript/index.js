@@ -25,6 +25,12 @@ take_photo_btn.addEventListener('click', (e) =>{
 	const image_tag= document.getElementById('snap') // get image tag
 	image_tag.setAttribute("src", snap) // set attribute src
 
+	// To create a flash
+	document.getElementById("flash").style.display = "inline";
+	setTimeout(function () {
+		document.getElementById("flash").style.display = "none";
+	}, 200);
+
 	// Save photo
 	/*const save_tag= document.getElementById('save-photo')
 	console.log('Get save button: '+save_tag)
