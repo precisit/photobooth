@@ -1,6 +1,6 @@
 
-const hidden_canvas = document.getElementById('canvas'); // Get canvas
-const video= document.getElementById('camera-stream')// Get video stream
+const canvas = document.getElementById('canvas'); // Get canvas
+const video= document.getElementById('video')// Get video stream
 
 // Fetch video stream
 var promise= navigator.mediaDevices.getUserMedia({ video: true })
@@ -19,19 +19,19 @@ const save_photo_btn=document.getElementById('save-photo')
 
 //Function to take snapshot
 const takeSnapShot = () => {
-	const width= document.getElementById('camera-stream').width; // get width of videostream
-	const height= document.getElementById('camera-stream').height;
-    const context = hidden_canvas.getContext("2d") // set context
+	const width= document.getElementById('video').width; // get width of videostream
+	const height= document.getElementById('video').height;
+    const context = canvas.getContext("2d") // set context
     context.drawImage(video,0,0,width,height) // draw image
-    return hidden_canvas.toDataURL("image/png") // return image
+    return canvas.toDataURL("image/png") // return image
 }
 
 // Eventlistener for take photo button
 take_photo_btn.addEventListener('click', (e) =>{
-	const snap= takeSnapShot() //call snapchot function
-	document.getElementById("snap").style.display = "inline"; // place the snapshot beside the video
-	const image_tag= document.getElementById('snap') // get image tag
-	image_tag.setAttribute("src", snap) // set attribute src
+	const image= takeSnapShot() //call snapchot function
+	document.getElementById("image").style.display = "inline"; // place the snapshot beside the video
+	const image_tag= document.getElementById('image') // get image tag
+	image_tag.setAttribute("src", image) // set attribute src
 
 	// To create a flash
 	document.getElementById("flash").style.display = "inline";
@@ -41,15 +41,15 @@ take_photo_btn.addEventListener('click', (e) =>{
 
 	// Save photo
 	const save_tag= document.getElementById('save-photo')
-	save_tag.setAttribute("href", snap) // set attribute href
+	save_tag.setAttribute("href", image) // set attribute href
 	e.preventDefault(); 
 })
 
 // Eventlistener for delete button
 delete_photo_btn.addEventListener('click', (e) =>{
-	const image_tag2= document.getElementById('snap') // get image tag
+	const image_tag2= document.getElementById('image') // get image tag
 	image_tag2.setAttribute("src",'') // set attribute src
-	document.getElementById("snap").style.display = "none"; // set display to none
+	document.getElementById("image").style.display = "none"; // set display to none
 
 	// Delete saved photo
 	const save_tag2= document.getElementById('save-photo')
