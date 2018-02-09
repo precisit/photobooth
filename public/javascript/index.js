@@ -1,9 +1,9 @@
 
-const canvas = document.getElementById('canvas'); // Get canvas
 const video= document.getElementById('video')// Get video stream
+const canvas = document.getElementById('canvas'); // Get canvas
 
 // Fetch video stream
-var promise= navigator.mediaDevices.getUserMedia({ video: true })
+navigator.mediaDevices.getUserMedia({ video: true })
 	.then(function(stream){
 		video.src = window.URL.createObjectURL(stream);
 		video.play();
