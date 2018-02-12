@@ -13,7 +13,7 @@ Download this project to your own computer by for example using git clone and th
 ### Prerequisites
 
 #### Install the node package manager
-install npm
+npm install
 
 ####  Install the Express.js framework
 npm install express --save
